@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-async-map-keys",
-  "version": "0.0.8",
+  "version": "0.0.0",
   "description": "Map keys from one object to a new object having the same values.",
   "license": "Apache-2.0",
   "author": {
@@ -43,6 +43,7 @@
     "@stdlib/assert-is-plain-object": "^0.0.x",
     "@stdlib/assert-is-positive-integer": "^0.0.x",
     "@stdlib/constants-float64-pinf": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.x",
     "@stdlib/utils-keys": "^0.0.x",
     "debug": "^2.6.9"
