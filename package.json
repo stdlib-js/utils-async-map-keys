@@ -1,0 +1,44 @@
+{
+  "name": "@stdlib/utils-async-map-keys",
+  "version": "0.0.0",
+  "description": "Map keys from one object to a new object having the same values.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/utils-async-map-keys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdutils",
+    "stdutil",
+    "utilities",
+    "utility",
+    "utils",
+    "util",
+    "asynchronous",
+    "async",
+    "map",
+    "transform",
+    "create",
+    "copy",
+    "cp",
+    "clone",
+    "extract",
+    "property",
+    "keys",
+    "values",
+    "object",
+    "array",
+    "obj"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
