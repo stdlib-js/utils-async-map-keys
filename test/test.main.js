@@ -22,7 +22,7 @@
 
 var tape = require( 'tape' );
 var noop = require( '@stdlib/utils-noop' );
-var mapKeysAsync = require( './../lib/map_keys.js' );
+var mapKeysAsync = require( './../lib' );
 
 
 // TESTS //
@@ -48,7 +48,7 @@ tape( 'the function throws an error if not provided an object (no options)', fun
 		true,
 		false,
 		null,
-		undefined
+		void 0
 	];
 
 	for ( i = 0; i < values.length; i++ ) {
@@ -78,7 +78,7 @@ tape( 'the function throws an error if not provided an object (options)', functi
 		true,
 		false,
 		null,
-		undefined
+		void 0
 	];
 
 	for ( i = 0; i < values.length; i++ ) {
