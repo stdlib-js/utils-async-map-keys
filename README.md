@@ -34,20 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-async-map-keys
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@esm/index.mjs';
+var mapKeysAsync = require( '@stdlib/utils-async-map-keys' );
 ```
 
 #### mapKeysAsync( obj, \[options,] transform, done )
@@ -321,15 +331,10 @@ The function accepts the same `options` as `mapKeysAsync()`.
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
+```javascript
 var resolve = require( 'path' ).resolve;
-import readFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-file@esm/index.mjs';
-import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@esm/index.mjs';
+var readFile = require( '@stdlib/fs-read-file' );
+var mapKeysAsync = require( '@stdlib/utils-async-map-keys' );
 
 var files = {
     'file1': resolve( __dirname, 'package.json' ),
@@ -358,10 +363,6 @@ function done( error, out ) {
 }
 
 mapKeysAsync( files, read, done );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -384,8 +385,8 @@ mapKeysAsync( files, read, done );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
--   <span class="package-name">[`@stdlib/utils/async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
+-   <span class="package-name">[`@stdlib/utils-map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
+-   <span class="package-name">[`@stdlib/utils-async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
 
 </section>
 
@@ -400,7 +401,7 @@ mapKeysAsync( files, read, done );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -464,9 +465,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys/tree/esm
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys
 
-[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils-async-map-values/tree/esm
+[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils-async-map-values
 
 <!-- </related-links> -->
 
