@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-async-map-keys
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-mapKeysAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var mapKeysAsync = require( 'path/to/vendor/umd/utils-async-map-keys/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.mapKeysAsync;
-})();
-</script>
+var mapKeysAsync = require( '@stdlib/utils-async-map-keys' );
 ```
 
 #### mapKeysAsync( obj, \[options,] transform, done )
@@ -339,12 +331,7 @@ The function accepts the same `options` as `mapKeysAsync()`.
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript">
-(function () {
+```javascript
 var resolve = require( 'path' ).resolve;
 var readFile = require( '@stdlib/fs-read-file' );
 var mapKeysAsync = require( '@stdlib/utils-async-map-keys' );
@@ -376,11 +363,6 @@ function done( error, out ) {
 }
 
 mapKeysAsync( files, read, done );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -403,8 +385,8 @@ mapKeysAsync( files, read, done );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
--   <span class="package-name">[`@stdlib/utils/async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
+-   <span class="package-name">[`@stdlib/utils-map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
+-   <span class="package-name">[`@stdlib/utils-async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
 
 </section>
 
@@ -483,9 +465,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys/tree/umd
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys
 
-[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils-async-map-values/tree/umd
+[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils-async-map-values
 
 <!-- </related-links> -->
 
