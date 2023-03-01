@@ -385,8 +385,8 @@ mapKeysAsync( files, read, done );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/utils/map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
--   <span class="package-name">[`@stdlib/utils/async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
+-   <span class="package-name">[`@stdlib/utils-map-keys`][@stdlib/utils/map-keys]</span><span class="delimiter">: </span><span class="description">map keys from one object to a new object having the same values.</span>
+-   <span class="package-name">[`@stdlib/utils-async/map-values`][@stdlib/utils/async/map-values]</span><span class="delimiter">: </span><span class="description">map values from one object to a new object having the same keys.</span>
 
 </section>
 
