@@ -52,13 +52,18 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-async-map-keys/tags). For example,
+
+```javascript
 import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@v0.1.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@v0.1.0-esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@esm/index.mjs';
 ```
 
 #### mapKeysAsync( obj, \[options,] transform, done )
@@ -340,7 +345,7 @@ The function accepts the same `options` as `mapKeysAsync()`.
 
 var resolve = require( 'path' ).resolve;
 import readFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-file@esm/index.mjs';
-import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@v0.1.0-esm/index.mjs';
+import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@esm/index.mjs';
 
 var files = {
     'file1': resolve( __dirname, 'package.json' ),
