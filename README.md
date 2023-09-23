@@ -45,30 +45,20 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/utils-async-map-keys
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var mapKeysAsync = require( '@stdlib/utils-async-map-keys' );
+import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@deno/mod.js';
 ```
 
 #### mapKeysAsync( obj, \[options,] transform, done )
@@ -344,8 +334,8 @@ The function accepts the same `options` as `mapKeysAsync()`.
 
 ```javascript
 var resolve = require( 'path' ).resolve;
-var readFile = require( '@stdlib/fs-read-file' );
-var mapKeysAsync = require( '@stdlib/utils-async-map-keys' );
+import readFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-file@deno/mod.js';
+import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@deno/mod.js';
 
 var files = {
     'file1': resolve( __dirname, 'package.json' ),
@@ -412,7 +402,7 @@ mapKeysAsync( files, read, done );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -476,9 +466,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys
+[@stdlib/utils/map-keys]: https://github.com/stdlib-js/utils-map-keys/tree/deno
 
-[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils-async-map-values
+[@stdlib/utils/async/map-values]: https://github.com/stdlib-js/utils-async-map-values/tree/deno
 
 <!-- </related-links> -->
 
