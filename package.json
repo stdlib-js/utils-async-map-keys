@@ -49,7 +49,7 @@
     "debug": "^2.6.9"
   },
   "devDependencies": {
-    "@stdlib/bench": "^0.1.0",
+    "@stdlib/bench": "^0.2.1",
     "@stdlib/fs-read-file": "^0.1.1",
     "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/utils-noop": "^0.1.1",
