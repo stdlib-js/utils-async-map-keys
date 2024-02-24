@@ -52,13 +52,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@deno/mod.js';
+import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@v0.2.1-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@deno/mod.js';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@v0.2.1-deno/mod.js';
 ```
 
 #### mapKeysAsync( obj, \[options,] transform, done )
@@ -335,7 +335,7 @@ The function accepts the same `options` as `mapKeysAsync()`.
 ```javascript
 var resolve = require( 'path' ).resolve;
 import readFile from 'https://cdn.jsdelivr.net/gh/stdlib-js/fs-read-file@deno/mod.js';
-import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@deno/mod.js';
+import mapKeysAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-map-keys@v0.2.1-deno/mod.js';
 
 var files = {
     'file1': resolve( __dirname, 'package.json' ),
